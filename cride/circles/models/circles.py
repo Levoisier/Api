@@ -14,7 +14,7 @@ class Circle(CRideModel):
     by its members. To join a circle a user must receive an unique
     invitation code from an existing circle member.
     """
-
+    id = models.AutoField(primary_key=True)
     name = models.CharField('circle name', max_length=140)
     slug_name = models.SlugField(unique=True, max_length=40)
 

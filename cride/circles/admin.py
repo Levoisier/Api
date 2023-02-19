@@ -12,6 +12,7 @@ class CircleAdmin(admin.ModelAdmin):
     """Circle admin."""
 
     list_display = (
+        'id',
         'slug_name',
         'name',
         'is_public',

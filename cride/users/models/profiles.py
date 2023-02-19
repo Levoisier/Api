@@ -13,7 +13,7 @@ class Profile(CRideModel):
     A profile holds a user's public data like biography, picture,
     and statistics.
     """
-
+    id = models.AutoField(primary_key=True)
     user = models.OneToOneField('users.User', on_delete=models.CASCADE)
 
     picture = models.ImageField(
